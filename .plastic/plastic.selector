@@ -1,0 +1,4 @@
+repository "Vampire Survivors@aamm05ir@cloud"
+  path "/"
+    br "/main"
+    co "/main"

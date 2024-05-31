@@ -8,10 +8,12 @@ public class Enemy : MonoBehaviour
 {
     private GameObject targetGameObject;
 
+    [SerializeField] private int hp = 4;
     [SerializeField] private Transform target_destination;
 
     [SerializeField] private float speed;
     private Rigidbody2D rgdbd2d;
+
     private void Awake()
     {
         rgdbd2d = GetComponent<Rigidbody2D>();
@@ -24,19 +26,27 @@ public class Enemy : MonoBehaviour
         rgdbd2d.velocity = direction * speed;
     }
 
-     private void OnCollisionStay2D(Collision2D other)
-     {
-         if (other.gameObject == targetGameObject)
-         {
-             Attack();
-         }
-     }
+    private void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject == targetGameObject)
+        {
+            Attack();
+        }
+    }
 
-     private void Attack()
-     {
-         Debug.Log("Attacing the player");
-     }
+    private void Attack()
+    {
+        // Debug.Log("Attacing the player");
+    }
 
+    public void TakeDammage(int dammage)
+    {
+        hp -= dammage;
+        if (hp < 1)
+        {
+            Destroy(gameObject);
+        }
+    }
 
- }
+}
 

@@ -6,18 +6,23 @@ using UnityEngine.TextCore.Text;
 
 public class Enemy : MonoBehaviour
 {
+    private Transform target_destination;
     private GameObject targetGameObject;
-
-    [SerializeField] private int hp = 4;
-    [SerializeField] private Transform target_destination;
-
+    private PlayerCharacter targetCharacter;
+    [SerializeField] private int hp = 10;
+    [SerializeField] private int damage = 1;
     [SerializeField] private float speed;
     private Rigidbody2D rgdbd2d;
 
     private void Awake()
     {
         rgdbd2d = GetComponent<Rigidbody2D>();
-        targetGameObject = target_destination.gameObject;
+    }
+
+    public void setTarget(GameObject target)
+    {
+        targetGameObject = target;
+        target_destination = target.transform;
     }
 
     private void FixedUpdate()
@@ -36,7 +41,11 @@ public class Enemy : MonoBehaviour
 
     private void Attack()
     {
-        // Debug.Log("Attacing the player");
+        if (targetCharacter == null)
+        {
+            targetCharacter = targetGameObject.GetComponent<PlayerCharacter>();
+        }
+        targetCharacter.TakeDamage(damage);
     }
 
     public void TakeDammage(int dammage)
@@ -47,6 +56,5 @@ public class Enemy : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }
 

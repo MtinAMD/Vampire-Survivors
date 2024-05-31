@@ -24,17 +24,19 @@ public class Enemy : MonoBehaviour
         rgdbd2d.velocity = direction * speed;
     }
 
-//     private void OnCollisionStay2D(Collision2D other)
-//     {
-//         if (Collision.gameObject == targetGameObject)
-//         {
-//             Attack();
-//         }
-//     }
-//
-//     private void Attack()
-//     {
-//         Debug.Log("Attacing the player");
-//     }
+     private void OnCollisionStay2D(Collision2D other)
+     {
+         if (other.gameObject == targetGameObject)
+         {
+             Attack();
+         }
+     }
+
+     private void Attack()
+     {
+         Debug.Log("Attacing the player");
+     }
+
+
  }
 

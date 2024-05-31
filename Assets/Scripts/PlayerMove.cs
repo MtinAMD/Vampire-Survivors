@@ -6,8 +6,11 @@ public class PlayerMove : MonoBehaviour
 {
     [SerializeField] private float speed = 3f;
     private Rigidbody2D rgbd2d;
-    private Vector3 movementVector3;
+    [HideInInspector] public Vector3 movementVector3;
     private Animate animate;
+
+    [HideInInspector] public float LastHorizontalVector; 
+    [HideInInspector] public float LastVerticalVector;
 
     private void Awake()
     {
@@ -20,6 +23,15 @@ public class PlayerMove : MonoBehaviour
         movementVector3.x = Input.GetAxisRaw("Horizontal");
         movementVector3.y = Input.GetAxisRaw("Vertical");
 
+        if (movementVector3.x != 0)
+        {
+            LastHorizontalVector = movementVector3.x;
+        }
+        if (movementVector3.y != 0)
+        {
+            LastVerticalVector = movementVector3.y;
+        }
+        
         animate.horizontal = movementVector3.x;
 
         movementVector3 *= speed;

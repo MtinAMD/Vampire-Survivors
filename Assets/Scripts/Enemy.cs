@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
@@ -48,12 +49,15 @@ public class Enemy : MonoBehaviour
         targetCharacter.TakeDamage(damage);
     }
 
+    /***********************************/
+    public GameObject Blood;
     public void TakeDammage(int dammage)
     {
         hp -= dammage;
         if (hp < 1)
         {
             Destroy(gameObject);
+            Instantiate(Blood, transform.position, quaternion.identity);
         }
     }
 }

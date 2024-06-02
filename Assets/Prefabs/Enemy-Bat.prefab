@@ -200,3 +200,4 @@ MonoBehaviour:
   hp: 10
   damage: 1
   speed: 1
+  Blood: {fileID: 6633268229516638019, guid: 1627c3f3f3794444999b335120765fca, type: 3}

@@ -14,6 +14,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] private int damage = 1;
     [SerializeField] private float speed;
     private Rigidbody2D rgdbd2d;
+    public GameObject Blood;
 
     private void Awake()
     {
@@ -48,16 +49,14 @@ public class Enemy : MonoBehaviour
         }
         targetCharacter.TakeDamage(damage);
     }
-
-    /***********************************/
-    public GameObject Blood;
-    public void TakeDammage(int dammage)
+    
+    public void TakeDamage(int damage)
     {
-        hp -= dammage;
+        hp -= damage;
         if (hp < 1)
         {
             Destroy(gameObject);
-            Instantiate(Blood, transform.position, quaternion.identity);
+            GameObject blood = Instantiate(Blood, transform.position, quaternion.identity);
         }
     }
 }

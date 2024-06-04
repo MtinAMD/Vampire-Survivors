@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
@@ -15,10 +16,13 @@ public class Enemy : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D rgdbd2d;
     public GameObject Blood;
+    
+    private TextMeshProUGUI score;
 
     private void Awake()
     {
         rgdbd2d = GetComponent<Rigidbody2D>();
+        score = FindAnyObjectByType<Score>().GetComponent<TextMeshProUGUI>();
     }
 
     public void setTarget(GameObject target)
@@ -57,6 +61,7 @@ public class Enemy : MonoBehaviour
         {
             Destroy(gameObject);
             GameObject blood = Instantiate(Blood, transform.position, quaternion.identity);
+            score.GetComponent<Score>().IncreaseScore();
         }
     }
 }

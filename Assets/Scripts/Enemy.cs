@@ -6,7 +6,7 @@ using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.TextCore.Text;
 
-public class Enemy : MonoBehaviour
+public class Enemy : MonoBehaviour , IDamagable
 {
     private Transform target_destination;
     private GameObject targetGameObject;

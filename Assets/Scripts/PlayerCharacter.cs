@@ -20,6 +20,7 @@ public class PlayerCharacter : MonoBehaviour
     private void Start()
     {
         Time.timeScale = 1f;
+        hpbar.setState(currentHP, maxHP);
     }
 
     public void TakeDamage(int damage)
@@ -42,7 +43,7 @@ public class PlayerCharacter : MonoBehaviour
         if (currentHP <= 0)
             return;
         currentHP += amount;
-        if (currentHP > maxHP)
-            currentHP = maxHP;
+        if (currentHP > maxHP) currentHP = maxHP;
+        hpbar.setState(currentHP,maxHP);
     }
 }

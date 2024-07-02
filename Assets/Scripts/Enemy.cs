@@ -14,6 +14,9 @@ public class Enemy : MonoBehaviour , IDamagable
     [SerializeField] private int hp = 10;
     [SerializeField] private int damage = 1;
     [SerializeField] private float speed;
+    // add experience to player when enemy is defeated
+    [SerializeField] private int experience_reward = 200;
+    
     private Rigidbody2D rgdbd2d;
     public GameObject Blood;
     
@@ -59,6 +62,8 @@ public class Enemy : MonoBehaviour , IDamagable
         hp -= damage;
         if (hp < 1)
         {
+            targetGameObject.GetComponent<Level>().AddExperience(experience_reward);
+            
             Destroy(gameObject);
             GameObject blood = Instantiate(Blood, transform.position, quaternion.identity);
             score.GetComponent<Score>().IncreaseScore();

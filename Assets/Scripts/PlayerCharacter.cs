@@ -13,10 +13,12 @@ public class PlayerCharacter : MonoBehaviour
     private bool isDead = false;
 
     [HideInInspector] public Level level;
+    [HideInInspector] public Coins coins;
 
     private void Awake()
     {
         level = GetComponent<Level>();
+        coins = GetComponent<Coins>();
         currentHP = maxHP;
     }
 

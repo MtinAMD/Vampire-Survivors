@@ -12,8 +12,11 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private GameObject weapons;
     private bool isDead = false;
 
+    [HideInInspector] public Level level;
+
     private void Awake()
     {
+        level = GetComponent<Level>();
         currentHP = maxHP;
     }
 

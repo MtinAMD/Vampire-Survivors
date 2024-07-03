@@ -7,6 +7,7 @@ public class ExitToMenu : MonoBehaviour
 {
     public void BackToMenu()
     {
+        Drop_on_Destroy.setQuitting(true);
         SceneManager.LoadScene("MainMenu");
     }
 }

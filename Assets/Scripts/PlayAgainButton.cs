@@ -7,6 +7,7 @@ public class PlayAgainButton : MonoBehaviour
 {
     public void RestartGamePlay()
     {
+        Drop_on_Destroy.setQuitting(true);
         SceneManager.LoadScene("GamePlayScene");
     }
 }

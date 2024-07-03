@@ -26,7 +26,7 @@ Transform:
   m_GameObject: {fileID: 3514564123268939130}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.3274345, y: -3.923935, z: -0.069099404}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toSpawn: {fileID: 4884185434384377795, guid: 91cb08eeedaa6844f9e1e41cf37f2cd7, type: 3}
-  probability: 0.588
+  probability: 0.85

@@ -9,6 +9,7 @@ public class Level : MonoBehaviour
     private int level = 1;
     private int experience = 0;
     [SerializeField] private ExperienceBar experienceBar;
+    [SerializeField] private UpgradePanelManager upgradePanel;
 
     private int TO_LEVEL_UP
     {
@@ -35,6 +36,7 @@ public class Level : MonoBehaviour
     {
         if (experience >= TO_LEVEL_UP)
         {
+            upgradePanel.OpenPanel();
             experience -= TO_LEVEL_UP;
             level += 1;
             experienceBar.SetLevelText(level);

@@ -12,7 +12,7 @@ public class Tile : MonoBehaviour
     private void Start()
     {
         GetComponentInParent<World>().Add(gameObject, tilePosition);
-        transform.position = new Vector3(-100, -100, 0);
+        //transform.position = new Vector3(-10, -10, 0);
     }
 
     public void Spawn()

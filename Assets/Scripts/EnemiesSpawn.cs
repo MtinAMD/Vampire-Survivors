@@ -1,7 +1,5 @@
 using System;
 using System.Collections;
-using System.Collections.Generic;
-using UnityEditor.Search;
 using UnityEngine;
 using Quaternion = System.Numerics.Quaternion;
 using Random = UnityEngine.Random;

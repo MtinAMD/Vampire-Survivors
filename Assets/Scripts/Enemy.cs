@@ -65,7 +65,6 @@ public class Enemy : MonoBehaviour , IDamagable
             targetGameObject.GetComponent<Level>().AddExperience(experience_reward);
             
             Destroy(gameObject);
-            GetComponent<Drop_on_Destroy>().DropItem();
             GameObject blood = Instantiate(Blood, transform.position, quaternion.identity);
             score.GetComponent<Score>().IncreaseScore();
         }

@@ -9,15 +9,19 @@ public class Drop_on_Destroy : MonoBehaviour
 {
     [SerializeField] private GameObject dropItemPrefab;
     [SerializeField] [Range(0f, 1f)] private float chance = 1f;
-    private Boolean isQuitting = false;
+    private static bool isQuitting = false;
 
-    public void OnApplicationQuit()
+    private void OnApplicationQuit()
     {
-        isQuitting = false;
+        isQuitting = true;
     }
 
-    // this will be called in Enemy.cs after the enemy destroys
-    public void DropItem()
+    public static void setQuitting(bool b)
+    {
+        isQuitting = b;
+    }
+
+    public void OnDestroy()
     {
         if (isQuitting)
         {

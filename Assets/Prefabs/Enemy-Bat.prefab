@@ -201,7 +201,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   hp: 3
   damage: 1
-  speed: 1
+  speed: 2
   experience_reward: 200
   Blood: {fileID: 6633268229516638019, guid: 1627c3f3f3794444999b335120765fca, type: 3}
 --- !u!114 &4495823401993790478
@@ -217,7 +217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropItemPrefab: {fileID: 5024640445088818345, guid: cd83bd2d87042f845a1aa6af106f395f, type: 3}
-  chance: 0.724
+  chance: 0.3
 --- !u!114 &-6725214061589683960
 MonoBehaviour:
   m_ObjectHideFlags: 0

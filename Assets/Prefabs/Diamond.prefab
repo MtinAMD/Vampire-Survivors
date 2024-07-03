@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1483739881887191256}
   - component: {fileID: 3138965105797517525}
+  - component: {fileID: 758535893581383775}
   - component: {fileID: 6034121749723904765}
   - component: {fileID: 746471589734443154}
-  - component: {fileID: 758535893581383775}
   - component: {fileID: -5003443629344086714}
   m_Layer: 0
   m_Name: Diamond
@@ -90,31 +90,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6034121749723904765
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024640445088818345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 882ea62c95ef1e14f97916b97a296ff3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &746471589734443154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5024640445088818345}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eda3fde7dc79ef64d9adf860fc5b7406, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  XPamount: 400
 --- !u!58 &758535893581383775
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -151,6 +126,31 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 0.5
+--- !u!114 &6034121749723904765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024640445088818345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 882ea62c95ef1e14f97916b97a296ff3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &746471589734443154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5024640445088818345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eda3fde7dc79ef64d9adf860fc5b7406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XPamount: 400
 --- !u!114 &-5003443629344086714
 MonoBehaviour:
   m_ObjectHideFlags: 0

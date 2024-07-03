@@ -50,7 +50,12 @@ public class World : MonoBehaviour
                 int tileToUpdate_x = CalculatePositionOnAxis(playerTilePosition.x + x, true);
                 int tileToUpdate_y = CalculatePositionOnAxis(playerTilePosition.y + y, false);
                 GameObject tile = tiles[tileToUpdate_x, tileToUpdate_y];
-                tile.transform.position = CalculateTilePosition(playerTilePosition.x + x, playerTilePosition.y + y);
+                Vector3 newPosition = CalculateTilePosition(playerTilePosition.x + x, playerTilePosition.y + y);
+                 if (newPosition != tile.transform.position)
+                 {
+                     tile.transform.position = newPosition;
+                     tiles[tileToUpdate_x, tileToUpdate_y].GetComponent<Tile>().Spawn();
+                 }
             }
         }
     }

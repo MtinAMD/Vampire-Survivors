@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5326909512424286068}
   - component: {fileID: 2501909061552798619}
   - component: {fileID: 302416343445711034}
+  - component: {fileID: 8793104675009466882}
   m_Layer: 0
   m_Name: Chest 1
   m_TagString: Untagged
@@ -148,7 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dropItemPrefab: {fileID: 7461769385493962767, guid: 8fa94f8e9d21f034db35fe98518d5de3, type: 3}
-  chance: 0.4
+  chance: 0.959
 --- !u!114 &302416343445711034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -159,5 +160,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14670214a04446d4f8609acce76dbabb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &8793104675009466882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4884185434384377795}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1d35441982f4fc46b9676ac4ddc9df6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

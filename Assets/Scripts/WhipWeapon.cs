@@ -5,34 +5,23 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 
-public class WhipWeapon : MonoBehaviour
+public class WhipWeapon : WeaponBase
 {
-    [SerializeField] private float time_to_attack = 4f;
-    private float timer;
-    [SerializeField] private int weap_damage = 1;
+    //[SerializeField] private float time_to_attack = 1f;
+    
+    //[SerializeField] private int weap_damage = 1;
     [SerializeField] private GameObject leftweapobj;
     [SerializeField] private GameObject rightweapobj;
     private PlayerMove playerMove;
-    [SerializeField] private Vector2 weap_attack_size = new Vector2(1.8f, 1.5f);
+    [SerializeField] private Vector2 weap_attack_size = new Vector2(2.76f, 1.7f);
 
     private void Awake()
     {
         playerMove = GetComponentInParent<PlayerMove>();
     }
 
-    void Update()
+    public override void Attack()
     {
-        timer -= Time.deltaTime;
-        if (timer < 0f)
-        {
-           Attack(); 
-        }
-    }
-
-    private void Attack()
-    {
-        timer = time_to_attack;
-
         if (playerMove.LastHorizontalVector > 0)
         {
             rightweapobj.SetActive(true);
@@ -55,7 +44,7 @@ public class WhipWeapon : MonoBehaviour
             if (temp != null)
             {
                 //colliders[i].GetComponent<Enemy>().TakeDammage(weap_dammage);
-                temp.TakeDamage(weap_damage);
+                temp.TakeDamage(weaponStats.damage);
             }
         }
     }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
-    [SerializeField] private Transform playerTransform;
+     private Transform playerTransform;
     [SerializeField] private Vector2Int currentTilePosition = new Vector2Int(0,0);
     [SerializeField] private Vector2Int playerTilePosition;
     [SerializeField] private Vector2Int playerPositionOnTile;
@@ -21,6 +21,12 @@ public class World : MonoBehaviour
     private void Awake()
     {
         tiles = new GameObject[3, 3];
+    }
+
+    private void Start()
+    {
+        UpdateTilesOnScreen();
+        playerTransform = GameManager.instance.PlayerTransform;
     }
 
     private void Update()

@@ -10,8 +10,14 @@ public class EnemiesManager : MonoBehaviour
     [SerializeField] private GameObject enemy;
     [SerializeField] private Vector2 spawnPos;
     [SerializeField] private float spawnTimer;
-    [SerializeField] private GameObject player;
+    private GameObject player;
     private float timer;
+
+
+    private void Start()
+    {
+        player = GameManager.instance.PlayerTransform.gameObject;
+    }
 
     private void Update()
     {

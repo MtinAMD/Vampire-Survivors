@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class World : MonoBehaviour
 {
-     private Transform playerTransform;
+    private Transform playerTransform;
     [SerializeField] private Vector2Int currentTilePosition = new Vector2Int(0,0);
     [SerializeField] private Vector2Int playerTilePosition;
     [SerializeField] private Vector2Int playerPositionOnTile;

@@ -7,7 +7,7 @@ public class ThrowingKnifeProjectable : MonoBehaviour
 {
     private Vector3 direction;
     [SerializeField] private float speed;
-    [SerializeField] private int damage = 5;
+    [SerializeField] private int damage = 3;
 
     public void SetDirection(float dir_x, float dir_y)
     {

@@ -6,7 +6,7 @@ using UnityEngine;
 public class ObjectDispose : MonoBehaviour
 {
     private Transform playerTransform;
-    float maxDistance = 25f;
+    float maxDistance = 61f;
     private void Update()
     {
         float distance = Vector3.Distance(transform.position, playerTransform.position);

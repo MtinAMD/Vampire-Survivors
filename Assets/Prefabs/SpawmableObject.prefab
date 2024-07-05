@@ -45,4 +45,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   toSpawn: {fileID: 4884185434384377795, guid: 91cb08eeedaa6844f9e1e41cf37f2cd7, type: 3}
-  probability: 1
+  probability: 0.6

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class disappear : MonoBehaviour
 {
-    [SerializeField] private float time_to_disappear = 0.8f;
+    [SerializeField] private float time_to_disappear = 0.2f;
     private float timer;
 
     private void OnEnable()

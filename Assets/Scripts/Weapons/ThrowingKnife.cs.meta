@@ -1,2 +1,13 @@
 fileFormatVersion: 2
 guid: 60fe2b244d24dd545b29e5ac2a64878c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - weaponData: {fileID: 11400000, guid: fcc078d03a226ce44ad765c7d7e5e995, type: 2}
+  - knifePrefab: {fileID: 7930347985477248202, guid: e370675be99c28d4cab83194247e1d94, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

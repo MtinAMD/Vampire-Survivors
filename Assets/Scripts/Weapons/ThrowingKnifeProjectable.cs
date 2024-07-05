@@ -10,6 +10,7 @@ public class ThrowingKnifeProjectable : MonoBehaviour
     [SerializeField] private float speed;
     public int damage = 2;
 
+    private float time_to_leave = 6f;
     public void SetDirection(float dir_x, float dir_y)
     {
         direction = new Vector3(dir_x, dir_y);
@@ -45,6 +46,10 @@ public class ThrowingKnifeProjectable : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-
+        time_to_leave -= Time.deltaTime;
+        if (time_to_leave < 0f)
+        {
+            Destroy(gameObject);
+        }
     }
 }

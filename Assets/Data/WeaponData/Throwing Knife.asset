@@ -15,7 +15,8 @@ MonoBehaviour:
   Name: Throwing Knife
   stats:
     damage: 2
-    timeToAttack: 5
+    timeToAttack: 2
+    numberOfAttack: 2
   weaponBasePrefab: {fileID: 6431097892999239308, guid: d9354ec7c9a425d4a9b0ab6c1f15021b, type: 3}
   upgrades:
   - {fileID: 11400000, guid: 1fa83356b5ca05549a36b43ced725fd6, type: 2}

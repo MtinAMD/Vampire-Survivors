@@ -5030,6 +5030,8 @@ MonoBehaviour:
   weapons: {fileID: 1664869512}
   level: {fileID: 0}
   coins: {fileID: 0}
+  hpRegenerationRate: 5
+  hpRegenerationTimer: 0
 --- !u!114 &1625102106
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5042,6 +5044,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c0d23bf538b7a748ac83ccd568d4956, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseXpNeeded: 1000
   experienceBar: {fileID: 549314968}
   upgradePanel: {fileID: 2114590678}
   upgrades:
@@ -5073,7 +5076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponObjectsContainer: {fileID: 1664869513}
-  startingWeapon: {fileID: 11400000, guid: 45d1312723528e94ba28e4a544a2e840, type: 2}
+  startingWeapon: {fileID: 11400000, guid: fcc078d03a226ce44ad765c7d7e5e995, type: 2}
 --- !u!1 &1654102937
 GameObject:
   m_ObjectHideFlags: 0

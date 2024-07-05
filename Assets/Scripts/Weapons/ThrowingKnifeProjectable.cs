@@ -2,12 +2,13 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class ThrowingKnifeProjectable : MonoBehaviour
 {
     private Vector3 direction;
     [SerializeField] private float speed;
-    [SerializeField] private int damage = 3;
+    public int damage = 2;
 
     public void SetDirection(float dir_x, float dir_y)
     {
@@ -33,6 +34,7 @@ public class ThrowingKnifeProjectable : MonoBehaviour
                 if (enemy != null)
                 {
                     enemy.TakeDamage(damage);
+                    MessageSystem.instance.postMessage(damage.ToString(), c.transform.position);
                     hitDetected = true;
                     break;
                 }

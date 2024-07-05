@@ -15,6 +15,9 @@ public class PlayerCharacter : MonoBehaviour
     [HideInInspector] public Level level;
     [HideInInspector] public Coins coins;
 
+    public float hpRegenerationRate = 5f;
+    public float hpRegenerationTimer;
+
     private void Awake()
     {
         level = GetComponent<Level>();
@@ -26,6 +29,16 @@ public class PlayerCharacter : MonoBehaviour
     {
         Time.timeScale = 1f;
         hpbar.setState(currentHP, maxHP);
+    }
+
+    private void Update()
+    {
+        hpRegenerationTimer += Time.deltaTime * hpRegenerationRate;
+        if (hpRegenerationTimer > 1f)
+        {
+            Heal(1);
+            hpRegenerationTimer -= 1f;
+        }
     }
 
     public void TakeDamage(int damage)

@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dd1ebc03ecbd32f449d0dd7dd437b651, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -146,8 +146,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddb1aceee75e69840bbeed63600209a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time_to_attack: 1
-  weap_damage: 1
+  weaponData: {fileID: 0}
+  weaponStats:
+    damage: 0
+    timeToAttack: 0
+  timeToAttack: 2
   leftweapobj: {fileID: 8694112719501310780}
   rightweapobj: {fileID: 4436218586458568932}
   weap_attack_size: {x: 2.76, y: 1.7}
@@ -226,7 +229,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: dd1ebc03ecbd32f449d0dd7dd437b651, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

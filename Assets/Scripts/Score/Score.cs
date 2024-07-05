@@ -18,4 +18,22 @@ public class Score : MonoBehaviour
     {
         score += 1;
     }
+
+    private void OnDestroy()
+    {
+        SaveScore();
+    }
+
+    private void SaveScore()
+    {
+        if (PlayerPrefs.HasKey("highScore"))
+        {
+            if (score > PlayerPrefs.GetInt("highScore"))
+                PlayerPrefs.SetInt("highScore", score);
+        }
+        else
+        {
+            PlayerPrefs.SetInt("highScore", score);
+        }
+    }
 }

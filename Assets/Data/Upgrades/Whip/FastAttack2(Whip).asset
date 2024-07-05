@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e252f393fb7c05e41bf4e5a38125d37a, type: 3}
-  m_Name: FastAttack(Whip)
+  m_Name: FastAttack2(Whip)
   m_EditorClassIdentifier: 
   upgradeType: 0
   Name: Fast Attack

@@ -21,7 +21,7 @@ public class WeaponStats
     {
         this.damage += weaponUpgradeStats.damage;
         this.timeToAttack += weaponUpgradeStats.timeToAttack;
-        this.numberOfAttack = weaponUpgradeStats.numberOfAttack;
+        this.numberOfAttack += weaponUpgradeStats.numberOfAttack;
     }
 }
 

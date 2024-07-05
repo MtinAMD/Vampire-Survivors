@@ -46,8 +46,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 0}
   weaponStats:
-    damage: 100
-    timeToAttack: 1
-    numberOfAttack: 2
+    damage: 2
+    timeToAttack: 4
+    numberOfAttack: 1
   knifePrefab: {fileID: 7930347985477248202, guid: e370675be99c28d4cab83194247e1d94, type: 3}
   spread: 0.05

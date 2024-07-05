@@ -43,6 +43,8 @@ public class UpgradePanelManager : MonoBehaviour
 
     public void ClosePanel()
     {
+        HideButtons();
+        
         Time.timeScale = 1f;
         panel.SetActive(false);
     }

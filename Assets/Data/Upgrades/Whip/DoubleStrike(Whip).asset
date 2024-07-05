@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: DoubleStrike(Whip)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: 
-  icon: {fileID: 0}
+  Name: Double Strike
+  icon: {fileID: 798828993739101153, guid: 8f4fbf78ca56e0c49a70526f9d50d8c3, type: 3}
   weaponData: {fileID: 11400000, guid: 45d1312723528e94ba28e4a544a2e840, type: 2}
   weaponUpgradeStats:
     damage: 0
     timeToAttack: 0
+    numberOfAttack: 1

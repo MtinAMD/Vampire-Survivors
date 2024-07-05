@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e252f393fb7c05e41bf4e5a38125d37a, type: 3}
-  m_Name: FastAttack(Whip)
+  m_Name: BetterGrip2(Knife)
   m_EditorClassIdentifier: 
   upgradeType: 0
-  Name: Fast Attack
-  icon: {fileID: -8075292573864476013, guid: 36fc4705ecc8f6245ab0ea1450f05559, type: 3}
-  weaponData: {fileID: 11400000, guid: 45d1312723528e94ba28e4a544a2e840, type: 2}
+  Name: Better Grip
+  icon: {fileID: -2703796735668811936, guid: 70db518befefa2b42885423fbe04ab69, type: 3}
+  weaponData: {fileID: 11400000, guid: fcc078d03a226ce44ad765c7d7e5e995, type: 2}
   weaponUpgradeStats:
     damage: 0
-    timeToAttack: -0.6
+    timeToAttack: -2
     numberOfAttack: 0

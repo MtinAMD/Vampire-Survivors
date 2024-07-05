@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f43673d09ffade48ae41dab5affc111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time_to_disappear: 0.8
+  time_to_disappear: 0.5
 --- !u!1 &4829750943844297594
 GameObject:
   m_ObjectHideFlags: 0
@@ -148,9 +148,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponData: {fileID: 0}
   weaponStats:
-    damage: 0
-    timeToAttack: 0
-  timeToAttack: 2
+    damage: 1
+    timeToAttack: 2
+    numberOfAttack: 1
   leftweapobj: {fileID: 8694112719501310780}
   rightweapobj: {fileID: 4436218586458568932}
   weap_attack_size: {x: 2.76, y: 1.7}
@@ -253,4 +253,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f43673d09ffade48ae41dab5affc111, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time_to_disappear: 0.8
+  time_to_disappear: 0.5

@@ -5,9 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class PlayAgainButton : MonoBehaviour
 {
-    public void RestartGamePlay()
+    public void RestartGamePlay(string scene)
     {
         Drop_on_Destroy.setQuitting(true);
-        SceneManager.LoadScene("GamePlayScene");
+        SceneManager.LoadScene("Essential", LoadSceneMode.Single);
+        SceneManager.LoadScene(scene, LoadSceneMode.Additive);
     }
 }

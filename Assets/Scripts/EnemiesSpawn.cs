@@ -10,6 +10,7 @@ public class EnemiesManager : MonoBehaviour
     [SerializeField] private GameObject enemy;
     [SerializeField] private Vector2 spawnPos;
     [SerializeField] private float spawnTimer;
+    [SerializeField] private GameObject enemyAnimation;
     private GameObject player;
     private float timer;
 
@@ -38,6 +39,11 @@ public class EnemiesManager : MonoBehaviour
         newEnemy.transform.position = position;
         newEnemy.GetComponent<Enemy>().setTarget(player);
         newEnemy.transform.parent = transform;
+
+
+        GameObject spriteObject = Instantiate(enemyAnimation);
+        spriteObject.transform.parent = newEnemy.transform;
+        spriteObject.transform.localPosition = UnityEngine.Vector3.zero;
     }
 
     private UnityEngine.Vector3 GenerateRandomPosition()

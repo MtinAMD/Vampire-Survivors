@@ -752,9 +752,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8d3980a51c8914d84aeb58730f8c15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy: {fileID: 1480701017778612839, guid: 47b26e5ae0167a24fbea378b808bc985, type: 3}
+  enemy: {fileID: 2282284416197171696, guid: 5e6b629271a52da4a8235bd6decffe1d, type: 3}
   spawnPos: {x: 13, y: 8}
   spawnTimer: 2
+  enemyAnimation: {fileID: 2439611748073123593, guid: ec1573e25ec75f449bbe9c901b69edcc, type: 3}
 --- !u!4 &349920659
 Transform:
   m_ObjectHideFlags: 0

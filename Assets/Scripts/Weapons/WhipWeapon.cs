@@ -12,12 +12,11 @@ public class WhipWeapon : WeaponBase
     //[SerializeField] private int weap_damage = 1;
     [SerializeField] private GameObject leftweapobj;
     [SerializeField] private GameObject rightweapobj;
-    private PlayerMove playerMove;
     [SerializeField] private Vector2 weap_attack_size = new Vector2(2.76f, 1.7f);
 
     private void Awake()
     {
-        playerMove = GetComponentInParent<PlayerMove>();
+        player_move = GetComponentInParent<PlayerMove>();
     }
 
     public override void Attack()
@@ -29,7 +28,7 @@ public class WhipWeapon : WeaponBase
     {
         for (int i = 0; i < weaponStats.numberOfAttack; i++)
         {
-            if (playerMove.LastHorizontalVector > 0)
+            if (player_move.LastHorizontalVector > 0)
             {
                 rightweapobj.SetActive(true);
                 Collider2D[] collider2Ds = Physics2D.OverlapBoxAll(rightweapobj.transform.position, weap_attack_size, 0f);

@@ -6,6 +6,7 @@ using UnityEngine;
 
 public abstract class WeaponBase : MonoBehaviour
 {
+    public PlayerMove player_move;
     public WeaponData weaponData;
 
     public WeaponStats weaponStats;

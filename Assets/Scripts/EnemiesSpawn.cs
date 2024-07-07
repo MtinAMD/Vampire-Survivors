@@ -113,7 +113,7 @@ public class EnemiesManager : MonoBehaviour
         enemy.GetComponent<Enemy>().Hp = 2;
         enemy.GetComponent<Enemy>().ExperienceReward = 75;
         enemy2.GetComponent<Enemy>().ExperienceReward = 100;
-        enemy2.GetComponent<Enemy>().Hp = 2;
+        enemy2.GetComponent<Enemy>().Hp = 4;
         enemy2.GetComponent<Enemy>().Speed = 1;
         enemy2.GetComponent<Enemy>().Damage = 2;
         player.GetComponentInParent<PlayerCharacter>().set_currentHP(1000);

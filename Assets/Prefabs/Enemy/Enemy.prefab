@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea7c3a3e988c594b980f65a6de805ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 3
+  hp: 2
   damage: 1
   speed: 2
-  experience_reward: 100
+  experience_reward: 75
   Blood: {fileID: 6633268229516638019, guid: 1627c3f3f3794444999b335120765fca, type: 3}
 --- !u!114 &2505979823756945611
 MonoBehaviour:

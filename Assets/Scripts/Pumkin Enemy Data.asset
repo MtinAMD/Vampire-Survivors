@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faee40f68e354ba438b1552da160eea7, type: 3}
   m_Name: Pumkin Enemy Data
   m_EditorClassIdentifier: 
-  name: pumkin
+  Name: Pumkin
   animatedprefab: {fileID: 2339481477052637756, guid: 5df2133c3c025c443962bd934746c4b6, type: 3}

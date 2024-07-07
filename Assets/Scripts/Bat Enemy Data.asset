@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: faee40f68e354ba438b1552da160eea7, type: 3}
   m_Name: Bat Enemy Data
   m_EditorClassIdentifier: 
-  name: ' bat'
+  Name: Bat
   animatedprefab: {fileID: 2439611748073123593, guid: ec1573e25ec75f449bbe9c901b69edcc, type: 3}

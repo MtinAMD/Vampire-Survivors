@@ -8,14 +8,14 @@ public class Animate : MonoBehaviour
     private Animator animator;
 
     public float horizontal;
+    private void Awake()
+    {
+        animator = GetComponentInChildren<Animator>();
+        
+    }
 
     private void Update()
     {
         animator.SetFloat("Horizontal",horizontal);
-    }
-
-    public void SetAnimate(GameObject animGameObject)
-    {
-        animator = animGameObject.GetComponent<Animator>();
     }
 }

@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UIElements;
 
 public class PlayerCharacter : MonoBehaviour
 {
@@ -29,20 +28,9 @@ public class PlayerCharacter : MonoBehaviour
         coins = GetComponent<Coins>();
         currentHP = maxHP;
     }
-    
-    private void InitAnim(GameObject sprit)
-    {
-        GameObject animGameObject =  Instantiate(sprit, transform);
-        GetComponent<Animate>().SetAnimate(animGameObject);
-    }
 
-    private void Loadd(CharacterData selectt)
-    {
-        InitAnim(selectt.SpritePrefab);
-    }
     private void Start()
     {
-        Loadd(selecttt);
         Time.timeScale = 1f;
         hpbar.setState(currentHP, maxHP);
     }
@@ -57,12 +45,6 @@ public class PlayerCharacter : MonoBehaviour
         }
     }
 
-     private CharacterData selecttt;
-
-    public void stss(CharacterData o)
-    {
-        selecttt = o;
-    }
     public void TakeDamage(int damage)
     {
         if (isDead) 

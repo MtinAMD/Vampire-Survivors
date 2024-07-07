@@ -5684,14 +5684,6 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 549314968}
     - target: {fileID: 7759630629132923551, guid: 2d2105158982b95409786805e7f0b2d7, type: 3}
-      propertyPath: button
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 7759630629132923551, guid: 2d2105158982b95409786805e7f0b2d7, type: 3}
-      propertyPath: selecttt
-      value: 
-      objectReference: {fileID: 11400000, guid: 7f0fd7764510f02439aefacfed9fe09d, type: 2}
-    - target: {fileID: 7759630629132923551, guid: 2d2105158982b95409786805e7f0b2d7, type: 3}
       propertyPath: gameOverPanel
       value: 
       objectReference: {fileID: 405970659}
@@ -5700,8 +5692,7 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1873968469}
     m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 1682360775092014199, guid: 2d2105158982b95409786805e7f0b2d7, type: 3}
+    m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d2105158982b95409786805e7f0b2d7, type: 3}

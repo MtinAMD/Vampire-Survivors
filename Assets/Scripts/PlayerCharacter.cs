@@ -12,6 +12,10 @@ public class PlayerCharacter : MonoBehaviour
     [SerializeField] private GameObject weapons;
     private bool isDead = false;
 
+    public void set_currentHP(int deposit)
+    {
+        currentHP += deposit;
+    }
     [HideInInspector] public Level level;
     [HideInInspector] public Coins coins;
 

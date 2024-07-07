@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class Level : MonoBehaviour
 {
-    private int level = 1;
+    public int level = 1;
     private int experience = 0;
     [SerializeField] private int baseXpNeeded = 1000;
     [SerializeField] private ExperienceBar experienceBar;
@@ -32,6 +32,10 @@ public class Level : MonoBehaviour
         }
     }
 
+    public int getL()
+    {
+        return level;
+    }
     private void Start()
     {
         experienceBar.UpdateExperienceSlider(experience, TO_LEVEL_UP);
@@ -84,7 +88,7 @@ public class Level : MonoBehaviour
             
             upgradePanel.OpenPanel(selectedUpgrades);
             experience -= TO_LEVEL_UP;
-            level += 1;
+            level = getL() + 1;
             experienceBar.SetLevelText(level);
         }
     }

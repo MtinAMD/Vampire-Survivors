@@ -16,7 +16,31 @@ public class Enemy : MonoBehaviour , IDamagable
     [SerializeField] private float speed;
     // add experience to player when enemy is defeated
     [SerializeField] private int experience_reward = 200;
-    
+
+    public int Hp
+    {
+        get => hp;
+        set => hp = value;
+    }
+
+    public float Speed
+    {
+        get => speed;
+        set => speed = value;
+    }
+
+    public int ExperienceReward
+    {
+        get => experience_reward;
+        set => experience_reward = value;
+    }
+
+    public int Damage
+    {
+        get => damage;
+        set => damage = value;
+    }
+
     private Rigidbody2D rgdbd2d;
     public GameObject Blood;
     
@@ -33,7 +57,7 @@ public class Enemy : MonoBehaviour , IDamagable
         targetGameObject = target;
         target_destination = target.transform;
     }
-
+    
     private void FixedUpdate()
     {
         Vector3 direction = (target_destination.position - transform.position).normalized;
@@ -58,6 +82,7 @@ public class Enemy : MonoBehaviour , IDamagable
     }
     
     public void TakeDamage(int damage)
+    
     {
         hp -= damage;
         if (hp < 1)

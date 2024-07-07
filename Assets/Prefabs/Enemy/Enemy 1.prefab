@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2505979823756945611}
   - component: {fileID: 7930986393428050054}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: Enemy 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -121,10 +121,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5ea7c3a3e988c594b980f65a6de805ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 3
-  damage: 1
-  speed: 2
-  experience_reward: 100
+  hp: 5
+  damage: 3
+  speed: 1
+  experience_reward: 200
   Blood: {fileID: 6633268229516638019, guid: 1627c3f3f3794444999b335120765fca, type: 3}
 --- !u!114 &2505979823756945611
 MonoBehaviour:

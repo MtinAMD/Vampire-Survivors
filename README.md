@@ -14,10 +14,10 @@ With options like :
 - Background music
 
 You can play using:
-- **W**
-- **A**
-- **S**
-- **D**
+- `W`
+- `A`
+- `S`
+- `D`
 
 ---
 

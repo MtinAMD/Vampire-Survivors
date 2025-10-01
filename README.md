@@ -12,9 +12,15 @@ With options like :
 - Background music
 Fight endless waves of monsters, level up, and see how long you can survive!  
 
+You can play using:
+- **W**
+- **A**
+- **S**
+- **D**
+
 ---
 
-## Installations 🛠️
+## Usage
 
 Download or clone this repository:
 ```bash

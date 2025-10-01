@@ -1,5 +1,7 @@
 # Vampire Survivors Clone 🧛‍♂️⚔️
 
+Fight endless waves of monsters, level up, and see how long you can survive!
+
 A Vampire Survivors–style game for Windows, built as an executable.
 With options like :
 - Leveling up
@@ -10,7 +12,6 @@ With options like :
 - Highest score
 - Two modes : Day & Night
 - Background music
-Fight endless waves of monsters, level up, and see how long you can survive!  
 
 You can play using:
 - **W**
